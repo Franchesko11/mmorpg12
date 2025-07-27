@@ -1,0 +1,9 @@
+Здравствуйте, {{ response.author.email }}!
+
+Автор объявления "{{ post.title }}" принял ваш отклик.
+
+Текст вашего отклика:
+{{ response.text }}
+
+Ссылка на объявление:
+http://12.com{% url 'post_detail' post.id %}

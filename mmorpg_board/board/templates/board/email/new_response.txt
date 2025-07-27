@@ -1,0 +1,9 @@
+Здравствуйте, {{ post.author.email }}!
+
+Пользователь {{ response.author.email }} оставил отклик на ваше объявление "{{ post.title }}".
+
+Текст отклика:
+{{ response.text }}
+
+Просмотреть все отклики:
+http://12.com{% url 'response_list' %}
